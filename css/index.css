@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 50%;
+  padding: 60px 0px;
+}
+
+/* MENU: NAVBAR/HEADER */
+
+nav {
+  background-color: #222222;
+}
+
+nav ul {
+  margin: 0;
+  padding: 10px;
+  list-style-type: none;
+  display: flex; /*acomoda el menu dentro del contenedor en forma horizontal*/
+}
+
+nav ul li {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 25%;
+}
+
+nav ul li a {
+  color: #eeeeee;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 100;
+  width: 100%;
+  display: block;
+  text-align: center; /*centra el texto en el contenido*/
+  padding: 10px 0; /*genera espacios de 10px arriba y abajo del texto y de 0 a la derecha e izquierda*/
+}
+
+nav ul li a:hover {
+  background: rgba(213, 151, 65, 0.3); /*aplica la sombra marron cuando pasas el mouse por el menu*/
+}
+
+/* SECTION MAIN IMAGE */
+
+#section-main-image {
+  height: 90vh;
+  background-image: url("https://images.unsplash.com/photo-1463797221720-6b07e6426c24?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2071&q=80");
+  display: flex; /*permite que se pueda mover el contenido*/
+  justify-content: center; /*justifica el contenido al centro arriba*/
+  align-items: center; /*centra los textos en el medio de la foto*/
+  flex-direction: column; /*alinea los textos en columnas para que queden uno abajo del otro*/ 
+}
+
+#section-main-image h1 {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  font-size: 100px;
+}
+
+#section-main-image h3 {
+  color: #ffffff;/*color del texto*/
+  text-shadow: 2px 2px 5px #000 ; /*sombra del texto*/
+  font-weight: normal; /*cambia el ancho de la letra del subtitulo, le quita la negrita*/
+
+}
+
+/* SECTION COFFEE */
+
+#section-coffee {
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+#section-coffee h2 {
+  margin: 40px 0 20px 0; /*le aplica el margen arriba y abajo y deja 0 a la derecha e izquierda*/
+}
+
+#section-coffee p {
+  text-align: justify; /*justifica el texto del parrafo*/
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.product {
+  padding: 0 15px;
+}
+
+.product img {
+  width: 200px;
+}
+
+/* FOOTER CONTACT */
+
+#footer-contact {
+  background-color: #58462c;
+  color: #eeeeee;
+  display: flex;
+  justify-content: center; /*centra todo lo que hay en contacto*/
+}
+
+#footer-contact .container {
+  text-align: center;
+
+}
+
+#footer-contact .contact-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form form {
+  margin-left: 50px;
+  text-align: right;
+}
+
+.contact-form form .form-control {
+  padding: 10px 0;
+}
+
+.contact-form form .form-control label {
+  margin-right: 15px;
+}
+
+.contact-form form button {
+  margin-top: 15px;
+
+  padding: 2px 30px;
+}
